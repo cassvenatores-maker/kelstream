@@ -740,20 +740,6 @@ footer {
   display: block;
   margin-top: 3px;
 }
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-up {
-  animation: fadeInUp 0.8s ease forwards;
-}
-
 /* Responsive */
 @media (max-width: 992px) {
   .hero h1 {
@@ -768,19 +754,70 @@ footer {
   .mobile-menu-btn {
     display: block;
   }
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 0 10px;
   }
   .hero-btns {
     flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .hero-btns .btn {
+    width: 100%;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 2rem;
   }
   .pricing-card.popular {
     transform: none;
   }
   .pricing-card.popular:hover {
     transform: translateY(-5px);
+  }
+  .urgency-banner {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+    gap: 8px;
+  }
+  .urgency-banner span {
+    font-size: 0.75rem;
+  }
+  .header-inner {
+    padding: 15px 15px;
+  }
+  .live-counter {
+    bottom: 15px;
+    left: 15px;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+  .social-proof {
+    bottom: 70px;
+    left: 15px;
+    padding: 10px 15px;
+    max-width: 250px;
+    gap: 10px;
+  }
+  .sp-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .sp-text {
+    font-size: 0.75rem;
+  }
+  .wa-chat {
+    padding: 15px;
   }
 }
